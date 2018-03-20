@@ -6,11 +6,13 @@ public class CountNumber {
 
         System.out.printf("Input Number:");
         int number = scanner.nextInt();
-        String numberText;
+        String numberText = "";
         int ones = number % 10;
         int tens = number / 10;
-        String onesText;
-        String tensText;
+        String onesText = "";
+        String tensText = "";
+        //String one = "One", two = "Two", three = "Three", four = "Four", five = "Five", six = "Six";
+        //String seven = "Seven", eight = "Eight", nine = "Nine";
 
         if (number < 10 && number >= 0) {
             switch (number) {
@@ -51,11 +53,11 @@ public class CountNumber {
                 default:
                     numberText = "";
             }
+
             if (numberText != "") {
                 System.out.printf("Number: %s", numberText);
             }
         } else if (number < 20 && number > 10) {
-
             switch (ones) {
                 case 1:
                     numberText = "Elevent";
@@ -153,10 +155,33 @@ public class CountNumber {
             if (onesText != "" && tensText != "") {
                 System.out.printf("Number: %s%s", tensText, onesText);
             }
-        }else if (number >= 100 && number<1000){
+        } else if (number >= 100 && number < 1000){
             int hundred = number / 100;
-            String hundredNumber;
+            String hundredNumber = "";
+            switch (hundred){
+                case 1:
 
+                    break;
+                case 2:
+                    break;
+                case 3:
+                    break;
+                case 4:
+                    break;
+                case 5:
+                    break;
+                case 6:
+                    break;
+                case 7:
+                    break;
+                case 8:
+                    break;
+                case 9:
+                    break;
+
+                    default:
+                        hundredNumber = "";
+            }
         }
     }
 }
